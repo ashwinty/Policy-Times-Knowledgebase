@@ -9,8 +9,8 @@ from openai import OpenAI
 # Ensure that st.set_page_config is the first Streamlit command
 st.set_page_config(layout="wide")
 
-# client = OpenAI(api_key = st.secrets['OPENAI_API_KEY'])
-# os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
+client = OpenAI(api_key = st.secrets['OPENAI_API_KEY'])
+os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 
 
 @st.cache_resource
