@@ -1,0 +1,15 @@
+langchain
+langchain-community
+langchain-core
+langchain-openai
+pandas
+transformers
+torch
+llama-index
+llama_index.core
+llama-index-vector-stores-faiss
+streamlit
+openai
+faiss-cpu
+llama-index-embeddings-openai
+protobuf
