@@ -54,7 +54,7 @@ if query and top_k:
         temp_summary = []
         key_counter = 0  # Counter for generating unique keys
         for resp in client.chat.completions.create(
-            model="gpt-4-1106-preview",
+            model="gpt-4o",
             messages=[
                 {"role": "system", "content": f"Act as a Policy Expert and Information Specialist for the Policy Times Chamber of Commerce. Your primary responsibility is to provide accurate, relevant, and timely information to users based on the organization's comprehensive knowledgebase. Now answer the {query}, using the following knowledgebase: {top3}. Your knowledgebase also contains name of the document, give it when answering so as to making your answer clear: {top3_name}. Strictly answer based on the available knowledge base."},
                 {"role": "user", "content": f"""Summarize the following interpretation of documents in context of the query '{query}':
